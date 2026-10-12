@@ -29,6 +29,7 @@ configs=(
     "config/starship.toml"
     "config/fish/config.fish"
     "config/ghostty/config"
+    "claude/CLAUDE.md"
 )
 
 # Get absolute path of dotfiles repository

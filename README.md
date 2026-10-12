@@ -2,7 +2,7 @@
 
 # My Dotfiles
 
-These are my personal dotfiles, customized for a modern development environment on macOS and Unix systems using Fish, Ghostty, and Tmux. Feel free to use them or borrow bits and pieces for your own setup!
+These are my personal dotfiles, customized for a modern development environment on macOS and Linux using Fish, Ghostty, and Tmux. Feel free to use them or borrow bits and pieces for your own setup!
 
 ## Installation
 
@@ -19,5 +19,8 @@ _**Note:** Running the installation script will symlink these configuration file
 ## Repository structure
 
 *   `install.sh`: The installer script that creates symbolic links in your home directory.
+*   `tmux.conf`: Tmux configuration (`~/.tmux.conf`).
 *   `config/`: Configuration directories for active applications:
+    *   `fish/`, `ghostty/`, `starship.toml`, `tmux/` (linked under `~/.config/`).
+*   `claude/`: Global instructions for Claude Code (`~/.claude/CLAUDE.md`).
 *   `legacy/`: Historical configurations for my old Linux/X11 setups (e.g., AwesomeWM, BSPWM, Compton, Irssi, Ncmpcpp, Zsh, etc.).
