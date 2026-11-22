@@ -43,4 +43,5 @@ These instructions apply to every Claude Code session on this machine. Project-l
 - Prune: when a stored instruction or fact is wrong, obsolete, or contradicts another, fix or remove it. If you can't verify it's wrong, ask instead.
 - Keep CLAUDE.md files short. They're loaded every session, so prefer one-line rules and move long reference material into docs/ and link to it.
 - Report every change to a CLAUDE.md or doc file with a one-line reason.
-- If I correct you on something likely to recur, propose a rule for the right CLAUDE.md.
+- If something I say contradicts a CLAUDE.md rule or a custom skill, or I correct you on something likely to recur, ask whether to update the relevant file. Follow my instruction for the current task either way.
+- If a repo's CLAUDE.md or AGENTS.md is missing, outdated, or would have prevented a mistake we just hit, propose a specific improvement. Ask before writing, and don't repeat a suggestion I've declined.
