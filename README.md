@@ -22,5 +22,5 @@ _**Note:** Running the installation script will symlink these configuration file
 *   `tmux.conf`: Tmux configuration (`~/.tmux.conf`).
 *   `config/`: Configuration directories for active applications:
     *   `fish/`, `ghostty/`, `starship.toml`, `tmux/` (linked under `~/.config/`).
-*   `claude/`: Global instructions for Claude Code (`~/.claude/CLAUDE.md`).
+*   `claude/`: Claude Code config: global instructions (`~/.claude/CLAUDE.md`) and skills (each folder in `claude/skills/` is linked under `~/.claude/skills/`).
 *   `legacy/`: Historical configurations for my old Linux/X11 setups (e.g., AwesomeWM, BSPWM, Compton, Irssi, Ncmpcpp, Zsh, etc.).
