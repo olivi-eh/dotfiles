@@ -18,6 +18,9 @@ echo -e "${BLUE}     Dotfiles CLI Installer      ${NC}"
 echo -e "${BLUE}=================================${NC}"
 echo
 
+# Get absolute path of dotfiles repository
+DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 # Backup directory
 BACKUP_DIR="${HOME}/.dotfiles_backup"
 TIMESTAMP=$(date +%Y%m%d_%H%M%S)
@@ -32,8 +35,10 @@ configs=(
     "claude/CLAUDE.md"
 )
 
-# Get absolute path of dotfiles repository
-DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# Link each Claude skill individually: ~/.claude/skills also holds app-managed folders
+for skill in "${DOTFILES_DIR}"/claude/skills/*/; do
+    [ -d "${skill}" ] && configs+=("claude/skills/$(basename "${skill}")")
+done
 
 # Function to link a configuration file
 link_config() {
